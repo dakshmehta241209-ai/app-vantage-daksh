@@ -1,7 +1,9 @@
 Northstar EdTech
+
 Northstar EdTech is a role-based Smart Campus Management Platform that brings students, faculty, coordinators and administrators into one centralized system. It is designed to reduce dependence on disconnected messaging groups, spreadsheets and separate campus portals.
 
 Submission links
+
 Live application: Northstar EdTech
 GitHub repository: (https://github.com/dakshmehta241209-ai/app-vantage-daksh.git)
 Demo video: <DEMO_VIDEO_URL>
