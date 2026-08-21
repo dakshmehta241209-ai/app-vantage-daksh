@@ -1,5 +1,4 @@
-# Northstar EdTech
-
+Northstar EdTech
 Northstar EdTech is a role-based Smart Campus Management Platform that brings students, faculty, coordinators and administrators into one centralized system. It is designed to reduce dependence on disconnected messaging groups, spreadsheets and separate campus portals.
 
 ## Submission links
@@ -64,10 +63,9 @@ For a student account, the application supports normal sign-up using a username,
 
 The client communicates only with authenticated API endpoints. The API validates requests, checks role permissions, applies business rules and then reads from or writes to the database. Files are stored outside the database and referenced using controlled URLs. Notifications and email services are triggered by successful domain events.
 
-See [ARCHITECTURE_DIAGRAM.md](ARCHITECTURE_DIAGRAM.md) for the complete diagram.
+See ARCHITECTURE_DIAGRAM.md for the complete diagram.
 
-## Database design
-
+Database design
 The data model separates users and roles from operational entities such as attendance, assignments, events and placements. This allows authorization rules and campus records to evolve independently.
 
 See [ER_DIAGRAM.md](ER_DIAGRAM.md) for the complete ER diagram.
