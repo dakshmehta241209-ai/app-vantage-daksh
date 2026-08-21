@@ -2,14 +2,11 @@
 
 Northstar EdTech is a role-based Smart Campus Management Platform that brings students, faculty, coordinators and administrators into one centralized system. It is designed to reduce dependence on disconnected messaging groups, spreadsheets and separate campus portals.
 
-> **Before submission:** Replace every value enclosed in `<...>`, remove any feature that is not working in the deployed build, and verify all demo credentials in an incognito window.
-
 ## Submission links
 
 - Live application: [Northstar EdTech](https://northstaredu-hjnfsqav.manus.space/)
-- GitHub repository: `<GITHUB_REPOSITORY_URL>`
+- GitHub repository: (https://github.com/dakshmehta241209-ai/app-vantage-daksh.git)
 - Demo video: `<DEMO_VIDEO_URL>`
-- API documentation: `<SWAGGER_OR_POSTMAN_URL>`
 
 ## Problem addressed
 
@@ -45,26 +42,23 @@ Campus activities such as attendance, assignments, announcements, events and pla
 6. Sign in as Admin and review platform statistics and user controls.
 
 ## Demo credentials
+The code explicitly contains these privileged-role passcodes:
 
-| Role | Email | Password |
-|---|---|---|
-| Student | `<STUDENT_DEMO_EMAIL>` | `<STUDENT_DEMO_PASSWORD>` |
-| Faculty | `<FACULTY_DEMO_EMAIL>` | `<FACULTY_DEMO_PASSWORD>` |
-| Coordinator | `<COORDINATOR_DEMO_EMAIL>` | `<COORDINATOR_DEMO_PASSWORD>` |
-| Admin | `<ADMIN_DEMO_EMAIL>` | `<ADMIN_DEMO_PASSWORD>` |
+| Role | Passcode |
+|---|---|
+| Faculty	| faculty@123 |
+| Coordinator	| coordinator@123 |
+| Admin	| admin@123 |
 
-Use demonstration accounts only. Never publish production credentials or secret keys.
+For a student account, the application supports normal sign-up using a username, email, and password.
 
 ## Technology stack
 
 | Layer | Technology |
 |---|---|
-| Frontend | React, TypeScript and Tailwind CSS |
-| Backend | `<NODE_EXPRESS_OR_NEXT_API>` |
-| Database | `<POSTGRESQL_OR_MONGODB>` |
-| Authentication | Email/password, secure session or JWT, `<GOOGLE_OAUTH_IF_IMPLEMENTED>` |
-| File storage | `<CLOUDINARY_AWS_S3_OR_OTHER>` |
-| Deployment | Manus Space / `<BACKEND_DEPLOYMENT_SERVICE>` |
+| Frontend | •	React •	TypeScript •	Vite •	Tailwind CSS •	Wouter •	React Hook Form •	TanStack React Query •	tRPC Client •	Radix UI •	Lucide React •	Framer Motion •	Recharts  |
+| Backend | •	Node.js •	Express.js •	TypeScript •	tRPC |
+| Database | •	MySQL •	Drizzle ORM  |
 
 ## System architecture
 
@@ -96,40 +90,18 @@ See [ER_DIAGRAM.md](ER_DIAGRAM.md) for the complete ER diagram.
 
 - Node.js 18 or later
 - npm, pnpm or yarn
-- `<DATABASE_NAME>` database instance
 
 ### Installation
 
 ```bash
-git clone <GITHUB_REPOSITORY_URL>
-cd <REPOSITORY_FOLDER>
+git clone (https://github.com/dakshmehta241209-ai/app-vantage-daksh.git)
+cd (app-vantage-daksh)
 npm install
 cp .env.example .env
 npm run dev
 ```
 
 Open the local URL displayed by the development server.
-
-## Environment variables
-
-Create `.env` from `.env.example`. Typical variables are:
-
-```env
-DATABASE_URL=
-SESSION_SECRET=
-JWT_SECRET=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-EMAIL_HOST=
-EMAIL_PORT=
-EMAIL_USER=
-EMAIL_PASSWORD=
-FILE_STORAGE_KEY=
-FILE_STORAGE_SECRET=
-APP_URL=
-```
-
-Do not commit the completed `.env` file.
 
 ## Useful commands
 
@@ -139,23 +111,6 @@ npm run build
 npm run test
 npm run lint
 ```
-
-Delete commands that are not defined in the actual `package.json`.
-
-## API overview
-
-| Area | Example responsibility |
-|---|---|
-| `/api/auth` | Registration, login, verification, reset and logout |
-| `/api/users` | Profiles, roles and user administration |
-| `/api/attendance` | Sessions, attendance records and summaries |
-| `/api/assignments` | Assignments, submissions, marks and feedback |
-| `/api/events` | Events, registrations and capacity |
-| `/api/placements` | Opportunities, eligibility and applications |
-| `/api/notifications` | Role-specific notifications and read status |
-| `/api/reports` | Administrative summaries and exports |
-
-Update this table to match the actual API routes.
 
 ## Testing checklist
 
@@ -168,11 +123,6 @@ Update this table to match the actual API routes.
 - Protected pages redirect unauthenticated users.
 - No secret keys appear in the repository or browser console.
 - The deployed application works on desktop and mobile.
-
-## Known limitations
-
-- `<LIST_ONLY_REAL_LIMITATIONS>`
-- Features not demonstrated in the submitted build should be described as future scope, not as completed work.
 
 ## Future scope
 
